@@ -1,0 +1,8 @@
+ID,Review item,Current evidence / issue,Status,Action / guardrail
+C01,Confirm project target and forecast horizon,Current target is next-row pH from current-row pH; timestamps are synthetic.,Pending mentor confirmation,Do not alter target without mentor decision.
+C02,Confirm final model choice,Linear Regression is selected for simplicity; test performance is nearly tied with constant-mean baseline.,Pending mentor approval,Keep both baseline and selected model results visible.
+C03,Confirm whether synthetic temporal experiment is acceptable,Original dataset is static and has no genuine timestamps.,Pending mentor decision,Describe results as exploratory pipeline validation only.
+C04,Confirm required real sensor variables,Current source does not include dissolved oxygen or pressure.,Pending mentor guidance,Collect real sensor data before operational claims.
+C05,Confirm anomaly evaluation approach,No labelled anomaly ground truth is available.,Pending mentor guidance,"Do not report anomaly precision, recall or F1."
+C06,Review held-out test and reporting protocol,"Chronological split: 1,939 train / 416 validation / 416 test; test reserved for final evaluation.",Pending mentor review,Freeze reported metrics only after approved corrections.
+C07,Final technical sign-off,No mentor approval or correction response has been supplied in the available context.,Not yet signed off,"Record reviewer, date, decision and any changes after review."
